@@ -114,7 +114,7 @@ int main()
         debugger("Unable to connect to the UDP server!");
     }
 
-    // Send it the NTP packet it wants. If n == -1, it failed.
+    // Send the NTP packet. If n == -1, it failed.
 
     status = write(sockfd, (char *)&packet, sizeof(ntp_packet));
 
